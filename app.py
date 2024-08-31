@@ -4,7 +4,7 @@ from PIL import Image
 
 st.set_page_config(
     page_title="Zak Music",
-    page_icon="♫",
+    page_icon="",
 )
 
 def main():
@@ -53,12 +53,12 @@ def main():
         st.header("About The Author", divider='rainbow')
         
       
-        st.image("author.jpeg")
+        st.image("author.jpeg", width = 300)
         st.title("Michael Phillip Zak, PhD")
         st.write("Mike earned a Bachelor’s degree in music composition and theory from Rosary Hill College, studying under Soterios Vlahoupoulos and graduating magna cum laude. He earned a Master’s degree in music composition at the State University of New York at Buffalo, where he went on to earn his PhD with distinction in music composition under the guidance of Morton Feldman, Lejaren Hiller, Leo Smit and Wlodziemiercz Kotonski. Later, Mike received a Master of Library Science degree in music librarianship from the University at Buffalo. In addition to teaching, Mike has published a theoretical treatise, including articles for 20th Century Music: “The Monotonal Relationship Between the Augmented and Diminished Polytonal Pitch Sets” (1995), “Progression of Polytonal Pitch Sets” (1996), and “Symmetrical Polytonality” (2009). He also composed and published “Starburst,” a piece for three vibraphones and marimba, which placed in the Percussive Arts Society Competition Contest. Mike has had works recorded on the Contemporary Record Society (CRS), including “Starburst,” “Trio” for violin, cello and piano, “Io” for flute, clarinet and piano, and “Jonathan Edwards” for organ, with Marie Zak on Organ. He is an honorary member of CRS and has written reviews of music scores and recordings.")
         st.title("Books")
-        book1_button = st.button(label='Popular Song Harmony Explained')
-        book2_button = st.button(label='Musical Chord Symbols and Symmetrical Polytonality')
+        book1_button = st.button(label='Popular Song Harmony Explained: A Guide to Hearing Chord Vectors')
+        book2_button = st.button(label='Musical Chord Symbols and Symmetrical Polytonality: Hidden Harmonic Dimensions')
         
         if book1_button:
             book1frombutton()
@@ -85,17 +85,17 @@ def main():
             st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
             st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
 
-        st.header("Place The Order - $25.00")
+        # st.header("Place The Order - $25.00")
 
-        with st.form(key='user_form'):
-            name = st.text_input('Name')
-            add_line_1 = st.text_input('Address Line 1')
-            add_line_2 = st.text_input('Address Line 2')
-            city = st.text_input('City')
-            state = st.text_input('State')
-            zip = st.text_input('Zip Code')
-            phone_number = st.text_input('Phone Number')
-            submit_button = st.form_submit_button(label='Buy')
+        # with st.form(key='user_form'):
+        #     name = st.text_input('Name')
+        #     add_line_1 = st.text_input('Address Line 1')
+        #     add_line_2 = st.text_input('Address Line 2')
+        #     city = st.text_input('City')
+        #     state = st.text_input('State')
+        #     zip = st.text_input('Zip Code')
+        #     phone_number = st.text_input('Phone Number')
+        #     submit_button = st.form_submit_button(label='Buy')
 
     # name = st.text_input("Name*", "Enter full name")
     # add_line_1 = st.text_input("Address line 1*", "Enter address")
@@ -108,31 +108,31 @@ def main():
     # print(property_id)
     # print(website_name)
         
-
+        st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="secondary", disabled=False, use_container_width=False)
 
     # Define the URL you want to redirect to
-        url = "https://buy.stripe.com/test_00geWGc543wXg6s3cc"
+        url = "https://buy.stripe.com/eVaaGK4Qr1xW60E000"
         
 
 
-        if submit_button:
-            if name == "Enter full name" or name == "":
-                st.error("Enter your name")
-            elif add_line_1 == "Enter address" or add_line_1 == "":
-                st.error("Enter your address")
-            elif city == "E.g. Buffalo" or city == "":
-                st.error("Enter your city")
-            elif state == "E.g. NY" or state == "":
-                st.error("Enter your state")
-            elif zip == "E.g. 14214" or zip == "":
-                st.error("Enter your ZIP code")
-            elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-                st.error("Enter your phone number")
-            else:
-                write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Popular Song Harmony Explained")
-                st.markdown(f"""
-                    <meta http-equiv="refresh" content="0; url={url}">
-                """, unsafe_allow_html=True)
+        # if submit_button:
+        #     if name == "Enter full name" or name == "":
+        #         st.error("Enter your name")
+        #     elif add_line_1 == "Enter address" or add_line_1 == "":
+        #         st.error("Enter your address")
+        #     elif city == "E.g. Buffalo" or city == "":
+        #         st.error("Enter your city")
+        #     elif state == "E.g. NY" or state == "":
+        #         st.error("Enter your state")
+        #     elif zip == "E.g. 14214" or zip == "":
+        #         st.error("Enter your ZIP code")
+        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
+        #         st.error("Enter your phone number")
+        #     else:
+        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Popular Song Harmony Explained")
+        #         st.markdown(f"""
+        #             <meta http-equiv="refresh" content="0; url={url}">
+        #         """, unsafe_allow_html=True)
 
 
     def book1frombutton():
@@ -153,17 +153,17 @@ def main():
             st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
             st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
 
-        st.write("### Place The Order - $25.00")
+        # st.write("### Place The Order - $25.00")
 
-        with st.form(key='user_form'):
-            name = st.text_input('Name')
-            add_line_1 = st.text_input('Address Line 1')
-            add_line_2 = st.text_input('Address Line 2')
-            city = st.text_input('City')
-            state = st.text_input('State')
-            zip = st.text_input('Zip Code')
-            phone_number = st.text_input('Phone Number')
-            submit_button = st.form_submit_button(label='Buy')
+        # with st.form(key='user_form'):
+        #     name = st.text_input('Name')
+        #     add_line_1 = st.text_input('Address Line 1')
+        #     add_line_2 = st.text_input('Address Line 2')
+        #     city = st.text_input('City')
+        #     state = st.text_input('State')
+        #     zip = st.text_input('Zip Code')
+        #     phone_number = st.text_input('Phone Number')
+        # submit_button = st.button(label='Buy')
 
     # name = st.text_input("Name*", "Enter full name")
     # add_line_1 = st.text_input("Address line 1*", "Enter address")
@@ -179,28 +179,30 @@ def main():
 
 
     # Define the URL you want to redirect to
+        
+        st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="secondary", disabled=False, use_container_width=False)
         url = "https://buy.stripe.com/test_00geWGc543wXg6s3cc"
         
 
 
-        if submit_button:
-            if name == "Enter full name" or name == "":
-                st.error("Enter your name")
-            elif add_line_1 == "Enter address" or add_line_1 == "":
-                st.error("Enter your address")
-            elif city == "E.g. Buffalo" or city == "":
-                st.error("Enter your city")
-            elif state == "E.g. NY" or state == "":
-                st.error("Enter your state")
-            elif zip == "E.g. 14214" or zip == "":
-                st.error("Enter your ZIP code")
-            elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-                st.error("Enter your phone number")
-            else:
-                write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Popular Song Harmony Explained")
-                st.markdown(f"""
-                    <meta http-equiv="refresh" content="0; url={url}">
-                """, unsafe_allow_html=True)
+        # if submit_button:
+        #     if name == "Enter full name" or name == "":
+        #         st.error("Enter your name")
+        #     elif add_line_1 == "Enter address" or add_line_1 == "":
+        #         st.error("Enter your address")
+        #     elif city == "E.g. Buffalo" or city == "":
+        #         st.error("Enter your city")
+        #     elif state == "E.g. NY" or state == "":
+        #         st.error("Enter your state")
+        #     elif zip == "E.g. 14214" or zip == "":
+        #         st.error("Enter your ZIP code")
+        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
+        #         st.error("Enter your phone number")
+        #     else:
+        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Popular Song Harmony Explained")
+        #         st.markdown(f"""
+        #             <meta http-equiv="refresh" content="0; url={url}">
+        #         """, unsafe_allow_html=True)
 
     def book2():
 
@@ -223,17 +225,17 @@ def main():
             st.write("Play the progression with smooth voice leading.")
             st.write("Listen to the progression and verify the tendency tones by ear.")
         
-        st.header("Place The Order - $25.00")
+        # st.header("Place The Order - $25.00")
 
-        with st.form(key='user_form'):
-            name = st.text_input('Name')
-            add_line_1 = st.text_input('Address Line 1')
-            add_line_2 = st.text_input('Address Line 2')
-            city = st.text_input('City')
-            state = st.text_input('State')
-            zip = st.text_input('Zip Code')
-            phone_number = st.text_input('Phone Number')
-            submit_button = st.form_submit_button(label='Buy')
+        # with st.form(key='user_form'):
+        #     name = st.text_input('Name')
+        #     add_line_1 = st.text_input('Address Line 1')
+        #     add_line_2 = st.text_input('Address Line 2')
+        #     city = st.text_input('City')
+        #     state = st.text_input('State')
+        #     zip = st.text_input('Zip Code')
+        #     phone_number = st.text_input('Phone Number')
+        #     submit_button = st.form_submit_button(label='Buy')
 
     # name = st.text_input("Name*", "Enter full name")
     # add_line_1 = st.text_input("Address line 1*", "Enter address")
@@ -249,27 +251,28 @@ def main():
 
 
     # Define the URL you want to redirect to
-        url = "https://buy.stripe.com/test_00geWGc543wXg6s3cc"
+        st.link_button("Buy", "https://buy.stripe.com/5kA3ei96H7WkexaeUV", help=None, type="secondary", disabled=False, use_container_width=False)
+        url = "https://buy.stripe.com/5kA3ei96H7WkexaeUV"
 
 
-        if submit_button:
-            if name == "Enter full name" or name == "":
-                st.error("Enter your name")
-            elif add_line_1 == "Enter address" or add_line_1 == "":
-                st.error("Enter your address")
-            elif city == "E.g. Buffalo" or city == "":
-                st.error("Enter your city")
-            elif state == "E.g. NY" or state == "":
-                st.error("Enter your state")
-            elif zip == "E.g. 14214" or zip == "":
-                st.error("Enter your ZIP code")
-            elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-                st.error("Enter your phone number")
-            else:
-                write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Musical Chord Symbols and Symmetrical Polytonality")
-                st.markdown(f"""
-                    <meta http-equiv="refresh" content="0; url={url}">
-                """, unsafe_allow_html=True)
+        # if submit_button:
+        #     if name == "Enter full name" or name == "":
+        #         st.error("Enter your name")
+        #     elif add_line_1 == "Enter address" or add_line_1 == "":
+        #         st.error("Enter your address")
+        #     elif city == "E.g. Buffalo" or city == "":
+        #         st.error("Enter your city")
+        #     elif state == "E.g. NY" or state == "":
+        #         st.error("Enter your state")
+        #     elif zip == "E.g. 14214" or zip == "":
+        #         st.error("Enter your ZIP code")
+        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
+        #         st.error("Enter your phone number")
+        #     else:
+        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Musical Chord Symbols and Symmetrical Polytonality")
+        #         st.markdown(f"""
+        #             <meta http-equiv="refresh" content="0; url={url}">
+        #         """, unsafe_allow_html=True)
 
     def book2frombutton():
 
@@ -292,17 +295,17 @@ def main():
             st.write("Play the progression with smooth voice leading.")
             st.write("Listen to the progression and verify the tendency tones by ear.")
         
-        st.write("### Place The Order - $25.00")
+        # st.write("### Place The Order - $25.00")
 
-        with st.form(key='user_form'):
-            name = st.text_input('Name')
-            add_line_1 = st.text_input('Address Line 1')
-            add_line_2 = st.text_input('Address Line 2')
-            city = st.text_input('City')
-            state = st.text_input('State')
-            zip = st.text_input('Zip Code')
-            phone_number = st.text_input('Phone Number')
-            submit_button = st.form_submit_button(label='Buy')
+        # with st.form(key='user_form'):
+        #     name = st.text_input('Name')
+        #     add_line_1 = st.text_input('Address Line 1')
+        #     add_line_2 = st.text_input('Address Line 2')
+        #     city = st.text_input('City')
+        #     state = st.text_input('State')
+        #     zip = st.text_input('Zip Code')
+        #     phone_number = st.text_input('Phone Number')
+        #     submit_button = st.form_submit_button(label='Buy')
 
     # name = st.text_input("Name*", "Enter full name")
     # add_line_1 = st.text_input("Address line 1*", "Enter address")
@@ -318,27 +321,29 @@ def main():
 
 
     # Define the URL you want to redirect to
+        st.link_button("Buy", "https://buy.stripe.com/5kA3ei96H7WkexaeUV", help=None, type="secondary", disabled=False, use_container_width=False)
+        
         url = "https://buy.stripe.com/test_00geWGc543wXg6s3cc"
 
 
-        if submit_button:
-            if name == "Enter full name" or name == "":
-                st.error("Enter your name")
-            elif add_line_1 == "Enter address" or add_line_1 == "":
-                st.error("Enter your address")
-            elif city == "E.g. Buffalo" or city == "":
-                st.error("Enter your city")
-            elif state == "E.g. NY" or state == "":
-                st.error("Enter your state")
-            elif zip == "E.g. 14214" or zip == "":
-                st.error("Enter your ZIP code")
-            elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-                st.error("Enter your phone number")
-            else:
-                write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Musical Chord Symbols and Symmetrical Polytonality")
-                st.markdown(f"""
-                    <meta http-equiv="refresh" content="0; url={url}">
-                """, unsafe_allow_html=True)
+        # if submit_button:
+        #     if name == "Enter full name" or name == "":
+        #         st.error("Enter your name")
+        #     elif add_line_1 == "Enter address" or add_line_1 == "":
+        #         st.error("Enter your address")
+        #     elif city == "E.g. Buffalo" or city == "":
+        #         st.error("Enter your city")
+        #     elif state == "E.g. NY" or state == "":
+        #         st.error("Enter your state")
+        #     elif zip == "E.g. 14214" or zip == "":
+        #         st.error("Enter your ZIP code")
+        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
+        #         st.error("Enter your phone number")
+        #     else:
+        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Musical Chord Symbols and Symmetrical Polytonality")
+        #         st.markdown(f"""
+        #             <meta http-equiv="refresh" content="0; url={url}">
+        #         """, unsafe_allow_html=True)
     
 
 
@@ -346,7 +351,7 @@ def main():
 
     
         # Second Container: Last Week Stats
-        st.header("Michael Phillip Zak", divider='rainbow')
+        st.header("Buy The Bundle", divider='rainbow')
         # st.header("Popular Song Harmony Explained: A Guide to Hearing Chord Vectors")
         # st.image("popular_song_harmony_cover.png", width = 200)
         # st.header("Musical Chord Symbols and Symmetrical Polytonality: Hidden Harmonic Dimensions")
@@ -363,17 +368,17 @@ def main():
 
         
          
-        st.header("Place The Order - $40.00")
+        # st.header("Place The Order - $40.00")
 
-        with st.form(key='user_form'):
-            name = st.text_input('Name')
-            add_line_1 = st.text_input('Address Line 1')
-            add_line_2 = st.text_input('Address Line 2')
-            city = st.text_input('City')
-            state = st.text_input('State')
-            zip = st.text_input('Zip Code')
-            phone_number = st.text_input('Phone Number')
-            submit_button = st.form_submit_button(label='Buy')
+        # with st.form(key='user_form'):
+        #     name = st.text_input('Name')
+        #     add_line_1 = st.text_input('Address Line 1')
+        #     add_line_2 = st.text_input('Address Line 2')
+        #     city = st.text_input('City')
+        #     state = st.text_input('State')
+        #     zip = st.text_input('Zip Code')
+        #     phone_number = st.text_input('Phone Number')
+        #     submit_button = st.form_submit_button(label='Buy')
 
     # name = st.text_input("Name*", "Enter full name")
     # add_line_1 = st.text_input("Address line 1*", "Enter address")
@@ -389,27 +394,28 @@ def main():
 
 
     # Define the URL you want to redirect to
-        url = "https://buy.stripe.com/test_00geWGc543wXg6s3cc"
+        st.link_button("Buy", "https://buy.stripe.com/aEUg144Qr5Ocdt6146", help=None, type="secondary", disabled=False, use_container_width=False)
+        url = "https://buy.stripe.com/aEUg144Qr5Ocdt6146"
 
 
-        if submit_button:
-            if name == "Enter full name" or name == "":
-                st.error("Enter your name")
-            elif add_line_1 == "Enter address" or add_line_1 == "":
-                st.error("Enter your address")
-            elif city == "E.g. Buffalo" or city == "":
-                st.error("Enter your city")
-            elif state == "E.g. NY" or state == "":
-                st.error("Enter your state")
-            elif zip == "E.g. 14214" or zip == "":
-                st.error("Enter your ZIP code")
-            elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-                st.error("Enter your phone number")
-            else:
-                write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Both")
-                st.markdown(f"""
-                    <meta http-equiv="refresh" content="0; url={url}">
-                """, unsafe_allow_html=True)
+        # if submit_button:
+        #     if name == "Enter full name" or name == "":
+        #         st.error("Enter your name")
+        #     elif add_line_1 == "Enter address" or add_line_1 == "":
+        #         st.error("Enter your address")
+        #     elif city == "E.g. Buffalo" or city == "":
+        #         st.error("Enter your city")
+        #     elif state == "E.g. NY" or state == "":
+        #         st.error("Enter your state")
+        #     elif zip == "E.g. 14214" or zip == "":
+        #         st.error("Enter your ZIP code")
+        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
+        #         st.error("Enter your phone number")
+        #     else:
+        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Both")
+        #         st.markdown(f"""
+        #             <meta http-equiv="refresh" content="0; url={url}">
+        #         """, unsafe_allow_html=True)
 
     # Create a button
     # if st.button('Buy query param'):
