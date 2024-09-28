@@ -28,28 +28,11 @@ def main():
         # Write DataFrame to CSV
         df.to_csv(csv_file_path, index=False)
 
-    # def display_book(book_title, book_image, book_description):
-    #     st.header("Mark Zak", divider='rainbow')
-    #     st.title(book_title)
-        
-    #     st.image(book_image, width=300)
-    #     st.write("#### Who would benefit from this study:")
-    #     st.markdown(
-    #             f"""
-    #             <div style="width: 100%; word-wrap: break-word;">
-    #                 {book_description}
-    #             </div>
-    #             """,
-    #             unsafe_allow_html=True
-    #         )
-
+    
     
     
     def aboutauthor():
-        # book1desc = "Most importantly, every chord in each song example should be spelled with 100% accuracy. This is critical to identifying the active tones and hearing with clarity the harmonic meaning of each. Then, every harmonic function and substitution must be studied and understood by playing and listening to the individual notes in the examples provided. By doing that, occurrences of the chord functions will become increasingly noticeable when hearing music. Please note, these are typical progressions from actual popular songs; these chords and harmonic principles are evident in countless other songs. Rarely is it otherwise. Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style. Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time."
-
-        # display_book("Popular Song Harmony Explained: A Guide to Hearing Chord Vectors", "popular_song_harmony_cover.png", book1desc)
-        # Second Container: Last Week Stats
+        
         st.header("About The Author", divider='rainbow')
         
       
@@ -68,10 +51,7 @@ def main():
 
 
     def book1():
-        # book1desc = "Most importantly, every chord in each song example should be spelled with 100% accuracy. This is critical to identifying the active tones and hearing with clarity the harmonic meaning of each. Then, every harmonic function and substitution must be studied and understood by playing and listening to the individual notes in the examples provided. By doing that, occurrences of the chord functions will become increasingly noticeable when hearing music. Please note, these are typical progressions from actual popular songs; these chords and harmonic principles are evident in countless other songs. Rarely is it otherwise. Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style. Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time."
-
-        # display_book("Popular Song Harmony Explained: A Guide to Hearing Chord Vectors", "popular_song_harmony_cover.png", book1desc)
-        # Second Container: Last Week Stats
+        
         st.header("Michael Phillip Zak", divider='rainbow')
         st.title("Popular Song Harmony Explained: A Guide to Hearing Chord Vectors")
       
@@ -85,28 +65,6 @@ def main():
             st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
             st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
 
-        # st.header("Place The Order - $25.00")
-
-        # with st.form(key='user_form'):
-        #     name = st.text_input('Name')
-        #     add_line_1 = st.text_input('Address Line 1')
-        #     add_line_2 = st.text_input('Address Line 2')
-        #     city = st.text_input('City')
-        #     state = st.text_input('State')
-        #     zip = st.text_input('Zip Code')
-        #     phone_number = st.text_input('Phone Number')
-        #     submit_button = st.form_submit_button(label='Buy')
-
-    # name = st.text_input("Name*", "Enter full name")
-    # add_line_1 = st.text_input("Address line 1*", "Enter address")
-    # add_line_2 = st.text_input("Address line 2", "Enter address")
-    # city = st.text_input("City*", "E.g. Buffalo")
-    # state = st.text_input("State*", "E.g. NY")
-    # zip = st.text_input("Zip Code*", "E.g. 14214")
-    # phone_number = st.text_input("Phone Number*", "Enter with the country code E.g. +1716....")
-    # print(client_name)
-    # print(property_id)
-    # print(website_name)
         
         st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="secondary", disabled=False, use_container_width=False)
 
@@ -185,24 +143,6 @@ def main():
         
 
 
-        # if submit_button:
-        #     if name == "Enter full name" or name == "":
-        #         st.error("Enter your name")
-        #     elif add_line_1 == "Enter address" or add_line_1 == "":
-        #         st.error("Enter your address")
-        #     elif city == "E.g. Buffalo" or city == "":
-        #         st.error("Enter your city")
-        #     elif state == "E.g. NY" or state == "":
-        #         st.error("Enter your state")
-        #     elif zip == "E.g. 14214" or zip == "":
-        #         st.error("Enter your ZIP code")
-        #     elif phone_number == "Enter with the country code E.g. +1716...." or phone_number == "":
-        #         st.error("Enter your phone number")
-        #     else:
-        #         write_to_csv(name, add_line_1, add_line_2, city, state, zip, phone_number, "Popular Song Harmony Explained")
-        #         st.markdown(f"""
-        #             <meta http-equiv="refresh" content="0; url={url}">
-        #         """, unsafe_allow_html=True)
 
     def book2():
 
