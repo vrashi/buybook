@@ -150,7 +150,10 @@ def main():
         # Second Container: Last Week Stats
         st.header("Michael Phillip Zak", divider='rainbow')
         st.title("Musical Chord Symbols and Symmetrical Polytonality: Hidden Harmonic Dimensions")
-        st.image("musical_chord_symbols_cover.png", width = 300)
+        st.image("musical_chord_symbols_cover.png", width = 400)
+        st.image("symmetry.png", width = 400)
+        st.image("pod.png", width = 400)
+        st.image("symset.png", width = 400)
         with st.expander("#### Main Aim of the Study?"):
             st.write("The main aim of this study is to become sensitized to the hierarchy of vectors at play within a harmonic musical texture that influence its direction towards a resolution.")
         with st.expander("#### What is Symmetrical Polytonality?"):
@@ -417,6 +420,18 @@ def main():
     book_name = st.sidebar.selectbox("", page_names_to_funcs.keys())
     page_names_to_funcs[book_name]()
 
+    
+
+    page_names_to_funcs_new = {
+        "Symmetrical Polytonality": book2,
+        "Popular Song Harmony Explained": book1,
+        "Buy The Bundle": buybundle,
+        "About The Author": aboutauthor
+    }
+
+    st.sidebar.title("Books Available!")
+    book_name = st.sidebar.selectbox("", page_names_to_funcs_new.keys())
+    page_names_to_funcs_new[book_name]()
 
    
 
