@@ -151,19 +151,13 @@ def main():
         st.header("Michael Phillip Zak", divider='rainbow')
         st.title("Musical Chord Symbols and Symmetrical Polytonality: Hidden Harmonic Dimensions")
         st.image("musical_chord_symbols_cover.png", width = 300)
-        with st.expander("#### What is the point of music theory and the study of harmony?"):
-            st.write("It clarifies by ear colorful textures and meaningful tensions that the harmony expresses. By identifying the underlying structures and hidden forces the mind lights up as well as the heart. If you know what to look for, the ear is prepared to find it, and remember it. Finding it repeatedly in unexpected places enriches the entire listening experience.")
-            st.write("It provides a path of hearing through the countless relationships of tones in order to make them conscious, and therefore useful to the composer, improviser, arranger, and deep listener.")
-            st.write("What are these powerful hidden natural forces that affects virtually every person in such a way? The study of harmony attempt to reveal these forces, and make them visible. To see the underlying structure of nature and the working elements that exist in the hidden dimensions of music can only be a good thing. Can our systems of understanding be limited? That goes without saying. Do they reveal something? Yes, and the musical test is to hear it, which is a reward in itself.")
-        with st.expander("#### What are the problems of music theory description?"):
-            st.write("Explanation is a larger concept than definition. We define the elements, then explain their relationships. Relationships occur in levels of influence, some more fundamental than others. Analysis attempts to explain the levels of relationships.")
-            st.write("Describing a multidimensional set of relationships using the linear structure of language is the primary problem of music theory. The whole must be grasped to see the relationship of the parts.")
-            st.write("Another problem is that the notational system of seven letter names attached to twelve individual pitches is unwieldy when applied to symmetrical relationships. Having a solid command of enharmonic chord spelling is absolutely essential.")
-        with st.expander("#### The path is easy to outline:"):
-            st.write("Spell the chord with perfect accuracy.")
-            st.write("Identify the internal parts that give it directional motion.")
-            st.write("Play the progression with smooth voice leading.")
-            st.write("Listen to the progression and verify the tendency tones by ear.")
+        with st.expander("#### Main Aim of the Study?"):
+            st.write("The main aim of this study is to become sensitized to the hierarchy of vectors at play within a harmonic musical texture that influence its direction towards a resolution.")
+        with st.expander("#### What is Symmetrical Polytonality?"):
+            st.write("Symmetrical Polytonality is a harmonic environment in which chord structures arising from symmetrically rich pitch sets/scales suggest several simultaneous tonalities. Multiple simultaneous tonal centers are rather uncommon, as the ear (mind) tries to organize the harmony within the prevailing tonality. Very possible to create, but rare in most music.")
+            st.write("Symmetrical polytonal elements are very common, however, providing the necessary directional motion that gives a progression its drive towards or away from that reference/resolution tone. The interacting relationships of suggested possible resolutions, and the actual or implied resolutions are a powerful source of structure and harmonic meaning in a musical creation.")
+        with st.expander("#### Importance of Symmetry"):
+            st.write("Symmetrical harmonic structures are the drive mechanism for tonal harmony. The symmetrical scales and the chords associated with them are also responsible for common non- diatonicism found in music involving the equally tempered chromatic scale. Harmonic symmetries manifest themselves in all styles throughout musical history, and became a primary force upon adoption of the equal tempered tuning system.")
         
         # st.header("Place The Order - $25.00")
 
