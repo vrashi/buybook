@@ -56,17 +56,37 @@ def main():
         st.title("Popular Song Harmony Explained: A Guide to Hearing Chord Vectors")
       
         st.image("popular_song_harmony_cover.png", width = 300)
-        with st.expander("#### Who would benefit from this study:"):
-            st.write("Anyone involved with chords and chord progressions, including music students, prospective improvisers, arrangers, composers, singers, and serious listeners with an interest in the nuts and bolts of how musical harmony works.")
-        with st.expander("#### What it aims to do:"):
-            st.write("Provide a framework for hearing the meaning of individual chords as they relate to the overall goal of a progression.")
-        with st.expander("#### How to use it:"):
-            st.write("Most importantly, every chord in each song example should be spelled with 100% accuracy. This is critical to identifying the active tones and hearing with clarity the harmonic meaning of each. Then, every harmonic function and substitution must be studied and understood by playing and listening to the individual notes in the examples provided. By doing that, occurrences of the chord functions will become increasingly noticeable when hearing music. Please note, these are typical progressions from actual popular songs; these chords and harmonic principles are evident in countless other songs. Rarely is it otherwise.")
-            st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
-            st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
+        st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="primary", disabled=False, use_container_width=False)
 
         
-        st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="secondary", disabled=False, use_container_width=False)
+     
+        st.write("#### Who would benefit from this study:")
+        st.write("Anyone involved with chords and chord progressions, including music students, prospective improvisers, arrangers, composers, singers, and serious listeners with an interest in the nuts and bolts of how musical harmony works.")
+        st.write("#### What it aims to do:")
+        st.write("Provide a framework for hearing the meaning of individual chords as they relate to the overall goal of a progression.")
+        st.write("#### How to use it:")
+        st.write("Most importantly, every chord in each song example should be spelled with 100% accuracy. This is critical to identifying the active tones and hearing with clarity the harmonic meaning of each. Then, every harmonic function and substitution must be studied and understood by playing and listening to the individual notes in the examples provided. By doing that, occurrences of the chord functions will become increasingly noticeable when hearing music. Please note, these are typical progressions from actual popular songs; these chords and harmonic principles are evident in countless other songs. Rarely is it otherwise.")
+        st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
+        st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
+        
+        st.image("vectors.png")
+        with st.expander("#### What is the point of music theory and the study of harmony?"):
+            st.write("It clarifies by ear colorful textures and meaningful tensions that the harmony expresses. By identifying the underlying structures and hidden forces the mind lights up as well as the heart. If you know what to look for, the ear is prepared to find it, and remember it. Finding it repeatedly in unexpected places enriches the entire listening experience.")
+            st.write("It provides a path of hearing through the countless relationships of tones in order to make them conscious, and therefore useful to the composer, improviser, arranger, and deep listener.")
+            st.write("What are these powerful hidden natural forces that affects virtually every person in such a way? The study of harmony attempt to reveal these forces, and make them visible. To see the underlying structure of nature and the working elements that exist in the hidden dimensions of music can only be a good thing. Can our systems of understanding be limited? That goes without saying. Do they reveal something? Yes, and the musical test is to hear it, which is a reward in itself.")      
+        with st.expander("#### What are the problems of music theory description?"):
+            st.write("Explanation is a larger concept than definition. We define the elements, then explain their relationships. Relationships occur in levels of influence, some more fundamental than others. Analysis attempts to explain the levels of relationship.")
+            st.write("Describing a multidimensional set of relationships using the linear structure of language is the primary problem of music theory. The whole must be grasped to see the relationship of the parts.")
+            st.write("Another problem is that the notational system of seven letter names attached to twelve individual pitches is unwieldy when applied to symmetrical relationships. Having a solid command of enharmonic chord spelling is absolutely essential.")
+        with st.expander("#### The path is easy to outline:"):
+            st.write("Spell the chord with perfect accuracy.")
+            st.write("Identify the internal parts that give it directional motion.")
+            st.write("Play the progression with smooth voice leading.")
+            st.write("Listen to the progression and verify the tendency tones by ear.")
+            
+        
+        
+        
 
     # Define the URL you want to redirect to
         url = "https://buy.stripe.com/eVaaGK4Qr1xW60E000"
@@ -151,16 +171,23 @@ def main():
         st.header("Michael Phillip Zak", divider='rainbow')
         st.title("Musical Chord Symbols and Symmetrical Polytonality: Hidden Harmonic Dimensions")
         st.image("musical_chord_symbols_cover.png", width = 400)
+        # with st.expander("#### Main Aim of the Study?"):
+        st.link_button("Buy", "https://buy.stripe.com/5kA3ei96H7WkexaeUV", help=None, type="primary", disabled=False, use_container_width=False)
+        st.write("#### Main Aim of the Study?")
+        st.write("The main aim of this study is to become sensitized to the hierarchy of vectors at play within a harmonic musical texture that influence its direction towards a resolution.")
+        # with st.expander("#### What is Symmetrical Polytonality?"):
+        st.write("#### What is Symmetrical Polytonality?")
+        st.write("Symmetrical Polytonality is a harmonic environment in which chord structures arising from symmetrically rich pitch sets/scales suggest several simultaneous tonalities. Multiple simultaneous tonal centers are rather uncommon, as the ear (mind) tries to organize the harmony within the prevailing tonality. Very possible to create, but rare in most music.")
+        st.write("Symmetrical polytonal elements are very common, however, providing the necessary directional motion that gives a progression its drive towards or away from that reference/resolution tone. The interacting relationships of suggested possible resolutions, and the actual or implied resolutions are a powerful source of structure and harmonic meaning in a musical creation.")
+        # with st.expander("#### Importance of Symmetry"):
+        st.write("#### Importance of Symmetry")
+        st.write("Symmetrical harmonic structures are the drive mechanism for tonal harmony. The symmetrical scales and the chords associated with them are also responsible for common non- diatonicism found in music involving the equally tempered chromatic scale. Harmonic symmetries manifest themselves in all styles throughout musical history, and became a primary force upon adoption of the equal tempered tuning system.")
         st.image("symmetry.png", width = 400)
+
+        st.write("#### Chord Pods")
         st.image("pod.png", width = 400)
+        st.write("#### Symsets")
         st.image("symset.png", width = 400)
-        with st.expander("#### Main Aim of the Study?"):
-            st.write("The main aim of this study is to become sensitized to the hierarchy of vectors at play within a harmonic musical texture that influence its direction towards a resolution.")
-        with st.expander("#### What is Symmetrical Polytonality?"):
-            st.write("Symmetrical Polytonality is a harmonic environment in which chord structures arising from symmetrically rich pitch sets/scales suggest several simultaneous tonalities. Multiple simultaneous tonal centers are rather uncommon, as the ear (mind) tries to organize the harmony within the prevailing tonality. Very possible to create, but rare in most music.")
-            st.write("Symmetrical polytonal elements are very common, however, providing the necessary directional motion that gives a progression its drive towards or away from that reference/resolution tone. The interacting relationships of suggested possible resolutions, and the actual or implied resolutions are a powerful source of structure and harmonic meaning in a musical creation.")
-        with st.expander("#### Importance of Symmetry"):
-            st.write("Symmetrical harmonic structures are the drive mechanism for tonal harmony. The symmetrical scales and the chords associated with them are also responsible for common non- diatonicism found in music involving the equally tempered chromatic scale. Harmonic symmetries manifest themselves in all styles throughout musical history, and became a primary force upon adoption of the equal tempered tuning system.")
         
         # st.header("Place The Order - $25.00")
 
@@ -188,7 +215,7 @@ def main():
 
 
     # Define the URL you want to redirect to
-        st.link_button("Buy", "https://buy.stripe.com/5kA3ei96H7WkexaeUV", help=None, type="secondary", disabled=False, use_container_width=False)
+        
         url = "https://buy.stripe.com/5kA3ei96H7WkexaeUV"
 
 
@@ -409,16 +436,16 @@ def main():
     #else:
      #   aboutauthor()
         
-    page_names_to_funcs = {
-        "About The Author": aboutauthor,
-        "Popular Song Harmony Explained": book1,
-        "Musical Chord Symbols and Symmetrical Polytonality": book2,
-        "Buy The Bundle": buybundle
-    }
+    # page_names_to_funcs = {
+    #     "About The Author": aboutauthor,
+    #     "Popular Song Harmony Explained": book1,
+    #     "Musical Chord Symbols and Symmetrical Polytonality": book2,
+    #     "Buy The Bundle": buybundle
+    # }
 
-    st.sidebar.title("Books Available!")
-    book_name = st.sidebar.selectbox("", page_names_to_funcs.keys())
-    page_names_to_funcs[book_name]()
+    # st.sidebar.title("Books Available!")
+    # book_name = st.sidebar.selectbox("", page_names_to_funcs.keys())
+    # page_names_to_funcs[book_name]()
 
     
 
