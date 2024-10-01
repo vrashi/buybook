@@ -52,20 +52,20 @@ def main():
         st.image("popular_song_harmony_cover.png", width = 300)
         st.link_button("Buy", "https://buy.stripe.com/eVaaGK4Qr1xW60E000", help=None, type="primary", disabled=False, use_container_width=False)
 
-        st.write("#### What is the point of music theory and the study of harmony?"):
+        st.write("#### What is the point of music theory and the study of harmony?")
         st.write("It clarifies by ear colorful textures and meaningful tensions that the harmony expresses. By identifying the underlying structures and hidden forces the mind lights up as well as the heart. If you know what to look for, the ear is prepared to find it, and remember it. Finding it repeatedly in unexpected places enriches the entire listening experience.")
         st.write("It provides a path of hearing through the countless relationships of tones in order to make them conscious, and therefore useful to the composer, improviser, arranger, and deep listener.")
         st.write("What are these powerful hidden natural forces that affects virtually every person in such a way? The study of harmony attempt to reveal these forces, and make them visible. To see the underlying structure of nature and the working elements that exist in the hidden dimensions of music can only be a good thing. Can our systems of understanding be limited? That goes without saying. Do they reveal something? Yes, and the musical test is to hear it, which is a reward in itself.")      
      
-        st.write("#### Who would benefit from this study:")
+        st.write("#### Who would benefit from this study")
         st.write("Anyone involved with chords and chord progressions, including music students, prospective improvisers, arrangers, composers, singers, and serious listeners with an interest in the nuts and bolts of how musical harmony works.")
         st.write("#### What it aims to do:")
         st.write("Provide a framework for hearing the meaning of individual chords as they relate to the overall goal of a progression.")
-        with st.expander("#### How to use it:")
+        with st.expander("#### How to use it"):
             st.write("Every chord in each song example should be spelled with 100% accuracy. This is critical to identifying the active tones and hearing with clarity the harmonic meaning of each. Then, every harmonic function and substitution must be studied and understood by playing and listening to the individual notes in the examples provided. By doing that, occurrences of the chord functions will become increasingly noticeable when hearing music. Please note, these are typical progressions from actual popular songs; these chords and harmonic principles are evident in countless other songs. Rarely is it otherwise.")
             st.write("Instrumentalists can practice these progressions, employing proper voicing, as these are actual progressions from popular songs, and have value beyond their pedagogical utility. Vocalists can determine which chord tones can provide a basis for a harmonizing part. Improvisers can freely invent their own melodies. Composers and arrangers can use the chord functions and progressions provided by the chart of Normal Harmonic Progression for ideas and suggestions on how to substitute or expand chords. Serious listeners and music lovers can increase their musical consciousness and appreciation of all harmonically based music in general, regardless of time period or style.")
             st.write("Every worthwhile endeavor requires repeated application of effort, and every musician (or athlete, scientist, writer, builder, etc.) knows that. The study of harmony will reveal surprising insights, so be patient, and take it one half step at a time.")
-        with st.expander("#### The path is easy to outline:"):
+        with st.expander("#### The path is easy to outline"):
             st.write("Spell the chord with perfect accuracy.")
             st.write("Identify the internal parts that give it directional motion.")
             st.write("Play the progression with smooth voice leading.")
